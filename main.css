@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-header,
+header {
+  font-family: "Playwrite SK", cursive;
+  font-weight: normal;
+}
 section h2,
 section h3,
 form button {
@@ -18,8 +21,8 @@ body, input, textarea {
 
 header {
   padding: 16px 0;
-  background-color: blueviolet;
-  color: rgb(7,7,7);
+  background-color:  rgba(122, 49, 14, 0.774);
+  color:rgb(7, 7, 7);
 }
 
 header nav li {
@@ -68,7 +71,7 @@ section {
   }
 
   section {
-    color: blueviolet;
+    color: rgba(122, 49, 14, 0.774);
   }
 
   section p {
@@ -120,22 +123,59 @@ section h3 {
 }
 
 form button {
-  background-color: blueviolet ;
+  background-color:  rgba(122, 49, 14, 0.774) ;
   color:rgb(7, 7, 7);
   border: none;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: rgb(172, 104, 236) ;
+  background-color: rgba(122, 49, 14, 0.774) ;
 }
 
 input:focus, textarea {
-  outline-color: blueviolet ;
+  outline-color: rgba(122, 49, 14, 0.774) ;
 }
 
 footer {
-  background-color: blueviolet;
+  background-color:  rgba(122, 49, 14, 0.774);
   color:rgb(7, 7, 7);
   padding: 16px 0;
+}
+
+.container .card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgb(0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px) ;
+}
+
+.container .card .content{
+  width: center;
+  padding: 450px;
+  text-align: center;
+  transform: translateY(100px);
+  opacity: 100px;
+  transition: 0.5s;
+  }
+
+.container .card:hover .content{
+  transform: translateY(0px);
+  opacity: 5;
+}
+
+.container .card .content img{
+  text-align: center;
+  display: block;
+  margin: 0;
+  justify-content: space-between;
 }

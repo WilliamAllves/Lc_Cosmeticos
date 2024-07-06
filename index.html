@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games Shop - A sua loja gamer</title>
+  <title>Lc. Cosméticos</title>
   <link rel="stylesheet" href="./main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +23,16 @@
           <li>
             <a href="#contact">Contatos</a>
           </li>
+          <li>
+            <a href="#promotion">Promoções</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <section id="about">
     <div class="container">
-      <img class="store-front" src="./imagens/loja.jpg" alt="Fachada da loja">
+      <img class="store-front" src="./imagens/Avon.natura.webp" alt="Tela Inicial">
     <div>
       <h2>Sobre a Loja</h2>
       <p>
@@ -45,6 +48,30 @@
       </ul>
     </div>
     </div>
+  </section>
+  <section id="promotion">
+    <div class="container">
+      <h2>Promoçoes da semana</h2>
+    </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <img src="./imagens/Humorarigor.jpg" alt="Humor">
+            <a href="#">Mais Informações</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./imagens/Essencial supreme.jpg" alt="Essencial">
+            <a href="#">Mais Informações</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <img src="./imagens/homenessence.jpg" alt="Homen Essence">
+            <a href="#">Mais Informações</a>
+          </div>
+        </div>
   </section>
   <section id="contact">
     <div class="container">
@@ -95,6 +122,15 @@
         &copy; Lc Cosméticos - Todos os direitos reservados -2024
       </p>
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </footer>
 </body>
 </html>
